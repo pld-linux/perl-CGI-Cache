@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	CGI
-%define	pnam	Cache
+%define		pdir	CGI
+%define		pnam	Cache
 Summary:	CGI::Cache perl module
 Summary(pl):	Modu³ Perla CGI::Cache
 Name:		perl-CGI-Cache
