@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	CGI
 %define	pnam	Cache
-Summary:	CGI-Cache perl module
-Summary(pl):	Modu³ perla CGI-Cache
+Summary:	CGI::Cache perl module
+Summary(pl):	Modu³ perla CGI::Cache
 Name:		perl-CGI-Cache
 Version:	1.20
 Release:	3
@@ -15,12 +15,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-CGI-Cache - Perl extension to help cache output of time-intensive CGI
+CGI::Cache - Perl extension to help cache output of time-intensive CGI
 scripts so that subsequent visits to such scripts will not cost as
 much time.
 
 %description -l pl
-Modu³ perla CGI-Cache.
+Modu³ perla CGI::Cache.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
