@@ -8,13 +8,16 @@
 Summary:	CGI::Cache perl module
 Summary(pl):	Modu³ perla CGI::Cache
 Name:		perl-CGI-Cache
-Version:	1.40
-Release:	4
+Version:	1.41
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	95ffb484809b8a79556044c3dee19afb
+# Source0-md5:	aea6df4e5ba064d28dedb0bf341df5ee
+%if %{with tests}
 BuildRequires:	perl-Cache-Cache
+BuildRequires:	perl-Tie-Restore
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
