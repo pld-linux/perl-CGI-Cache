@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	CGI
 %define	pnam	Cache
-%include	/usr/lib/rpm/macros.perl
 Summary:	CGI-Cache perl module
 Summary(pl):	Modu³ perla CGI-Cache
 Name:		perl-CGI-Cache
 Version:	1.20
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +23,7 @@ much time.
 Modu³ perla CGI-Cache.
 
 %prep
-%setup -q -n CGI-Cache-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 echo "y" | perl Makefile.PL
