@@ -6,7 +6,7 @@
 %define	pdir	CGI
 %define	pnam	Cache
 Summary:	CGI::Cache perl module
-Summary(pl):	Modu³ perla CGI::Cache
+Summary(pl):	Modu³ Perla CGI::Cache
 Name:		perl-CGI-Cache
 Version:	1.41
 Release:	1
@@ -31,7 +31,7 @@ much time.
 %description -l pl
 CGI::Cache - rozszerzenie Perla u³atwiaj±ce buforowanie wyj¶cia z
 czasoch³onnych skryptów CGI w ten sposób, ¿e kolejne uruchomienia tych
-skrypów bêd± zajmowa³y mniej czasu.
+skryptów bêd± zajmowa³y mniej czasu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
