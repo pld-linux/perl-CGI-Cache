@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	CGI-Cache perl module
 Summary(pl):	Modu³ perla CGI-Cache
 Name:		perl-CGI-Cache
@@ -8,7 +8,8 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI-Cache-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl >= 5.005_03-12
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -18,7 +19,7 @@ CGI-Cache - Perl extension to help cache output of time-intensive CGI scripts
 so that subsequent visits to such scripts will not cost as much time. 
 
 %description -l pl
-Modu³ perla CGI-Cache
+Modu³ perla CGI-Cache.
 
 %prep
 %setup -q -n CGI-Cache-%{version}
