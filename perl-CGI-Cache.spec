@@ -4,8 +4,8 @@
 Summary:	CGI::Cache perl module
 Summary(pl):	Modu³ perla CGI::Cache
 Name:		perl-CGI-Cache
-Version:	1.20
-Release:	3
+Version:	1.21
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
