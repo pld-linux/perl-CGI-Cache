@@ -5,14 +5,14 @@ Summary:	CGI::Cache perl module
 Summary(pl):	Modu³ perla CGI::Cache
 Name:		perl-CGI-Cache
 Version:	1.40
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl-Cache-Cache
 BuildRequires:	perl-Storable
 BuildRequires:	perl-devel >= 5.6.1
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,7 +30,8 @@ skrypów bêd± zajmowa³y mniej czasu.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-echo "y" | perl Makefile.PL
+echo "y" | perl Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
@@ -44,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/CGI/Cache.pm
+%{perl_vendorlib}/CGI/Cache.pm
 %{_mandir}/man3/*
