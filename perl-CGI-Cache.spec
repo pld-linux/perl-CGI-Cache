@@ -37,7 +37,7 @@ skryptów bêd± zajmowa³y mniej czasu.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-echo "y" | perl Makefile.PL \
+perl Makefile.PL --skipdeps \
 	INSTALLDIRS=vendor
 %{__make}
 
@@ -46,8 +46,11 @@ echo "y" | perl Makefile.PL \
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/CGI/Cache/.packlist
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
