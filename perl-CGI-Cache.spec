@@ -6,7 +6,7 @@
 %define		pdir	CGI
 %define		pnam	Cache
 Summary:	CGI::Cache perl module
-Summary(pl.UTF-8):   Moduł Perla CGI::Cache
+Summary(pl.UTF-8):	Moduł Perla CGI::Cache
 Name:		perl-CGI-Cache
 Version:	1.4200
 Release:	1
