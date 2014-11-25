@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	CGI
 %define		pnam	Cache
+%include	/usr/lib/rpm/macros.perl
 Summary:	CGI::Cache perl module
 Summary(pl.UTF-8):	Moduł Perla CGI::Cache
 Name:		perl-CGI-Cache
@@ -14,6 +14,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2a1956d555c366ced55223258a648ff6
+URL:		http://search.cpan.org/dist/CGI-Cache/
 %if %{with tests}
 BuildRequires:	perl-Cache-Cache
 BuildRequires:	perl-Tie-Restore
