@@ -4,7 +4,6 @@
 
 %define		pdir	CGI
 %define		pnam	Cache
-%include	/usr/lib/rpm/macros.perl
 Summary:	CGI::Cache perl module
 Summary(pl.UTF-8):	Moduł Perla CGI::Cache
 Name:		perl-CGI-Cache
